@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizMaster</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar (injected by app.js) -->
+    <nav id="navbar"></nav>
+    <!-- Page content (swapped by router) -->
+    <div id="page-root"></div>
+  </div>
+
+  <!-- Core modules -->
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+
+  <!-- Page modules -->
+  <script src="/js/pages/home.js"></script>
+  <script src="/js/pages/library.js"></script>
+  <script src="/js/pages/settings.js"></script>
+  <script src="/js/pages/createQuiz.js"></script>
+  <script src="/js/pages/editor.js"></script>
+  <script src="/js/pages/host.js"></script>
+
+  <!-- Format: Jeopardy -->
+  <script src="/js/formats/jeopardy/editor.js"></script>
+  <script src="/js/formats/jeopardy/host.js"></script>
+
+  <!-- Format: Countdown -->
+  <script src="/js/formats/countdown/editor.js"></script>
+  <script src="/js/formats/countdown/host.js"></script>
+
+  <script>
+    // Boot the application
+    QuizMasterApp.init();
+  </script>
+</body>
+</html>
